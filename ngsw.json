@@ -1,0 +1,51 @@
+{
+  "configVersion": 1,
+  "index": "https://puku0x.github.io/angular-pwa-sample/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://puku0x.github.io/angular-pwa-sample/favicon.ico",
+        "https://puku0x.github.io/angular-pwa-sample/index.html",
+        "https://puku0x.github.io/angular-pwa-sample/0.f3333ca4d32ab213bee8.chunk.js",
+        "https://puku0x.github.io/angular-pwa-sample/inline.ffaaa30ffcaeb1ab299c.bundle.js",
+        "https://puku0x.github.io/angular-pwa-sample/main.0e1a7bf3075efba40e13.bundle.js",
+        "https://puku0x.github.io/angular-pwa-sample/polyfills.fca27ddf9647d9c26040.bundle.js",
+        "https://puku0x.github.io/angular-pwa-sample/styles.c472662ef197464feae2.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://puku0x.github.io/angular-pwa-sample/assets/favicons/apple-touch-icon-144x144.png",
+        "https://puku0x.github.io/angular-pwa-sample/assets/favicons/favicon-16x16.png",
+        "https://puku0x.github.io/angular-pwa-sample/assets/favicons/favicon-194x194.png",
+        "https://puku0x.github.io/angular-pwa-sample/assets/favicons/favicon-32x32.png",
+        "https://puku0x.github.io/angular-pwa-sample/assets/favicons/favicon-96x96.png",
+        "https://puku0x.github.io/angular-pwa-sample/assets/favicons/favicon.ico"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://puku0x.github.io/angular-pwa-sample/0.f3333ca4d32ab213bee8.chunk.js": "736df4f4f185c3359cc5845be39e4e3c759e525e",
+    "https://puku0x.github.io/angular-pwa-sample/assets/favicons/apple-touch-icon-144x144.png": "77224dc229075fc690b26658578fdd1c70dc2ca3",
+    "https://puku0x.github.io/angular-pwa-sample/inline.ffaaa30ffcaeb1ab299c.bundle.js": "ae82017cc8ff20bdcd107f2d36aabcd774addfa6",
+    "https://puku0x.github.io/angular-pwa-sample/assets/favicons/favicon-16x16.png": "cc30aff2ff612b8049465c55c6515cf5777ec8c7",
+    "https://puku0x.github.io/angular-pwa-sample/main.0e1a7bf3075efba40e13.bundle.js": "a3bcec0d9df2c043f6f803e0d867cfd74c3c1b6b",
+    "https://puku0x.github.io/angular-pwa-sample/assets/favicons/favicon-194x194.png": "c7c48f063a958e8dcca1d36babbd16618619fa29",
+    "https://puku0x.github.io/angular-pwa-sample/polyfills.fca27ddf9647d9c26040.bundle.js": "1484d5bab33e01acbf080cd0b6f4f59a4c7c86b7",
+    "https://puku0x.github.io/angular-pwa-sample/assets/favicons/favicon-32x32.png": "baf2d48c36260045a27b177873dfe69cbc7a833e",
+    "https://puku0x.github.io/angular-pwa-sample/styles.c472662ef197464feae2.bundle.css": "c02aafc091593f64df5896e900dc026f2a998ec8",
+    "https://puku0x.github.io/angular-pwa-sample/assets/favicons/favicon-96x96.png": "8f74f4c167f98e36fe660095a39a2f1ff24573d5",
+    "https://puku0x.github.io/angular-pwa-sample/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://puku0x.github.io/angular-pwa-sample/assets/favicons/favicon.ico": "a14ef3628d595d40631adcf174a0a677e8743dc0",
+    "https://puku0x.github.io/angular-pwa-sample/index.html": "9b4395636f4f8442569c9aa166074fdb082afbff"
+  }
+}
