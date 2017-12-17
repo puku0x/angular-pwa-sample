@@ -1,0 +1,36 @@
+sudo: false
+
+language: node_js
+
+node_js:
+  - stable
+
+dist: trusty
+
+cache:
+  directories:
+    - node_modules
+
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+
+before_install:
+  - npm install -g @angular/cli
+
+script:
+  - ng test --single-run --browser=ChromeHeadless
+
+before_deploy:
+  - ng build --prod --base-href="https://puku0x.github.io/angular-pwa-sample/"
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  on:
+    branch: master
