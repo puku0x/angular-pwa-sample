@@ -22,5 +22,5 @@ script:
   - ng test --single-run --browser=ChromeHeadless
 
 after_success:
-  - ng build --prod --base-href="https://puku0x.github.io/angular-pwa-sample/"
+  - ng build --prod
   - firebase deploy --token $FIREBASE_TOKEN
