@@ -16,14 +16,11 @@ addons:
 
 before_install:
   - npm install -g @angular/cli
+  - npm install -g firebase-tools
 
 script:
   - ng test --single-run --browser=ChromeHeadless
 
-before_deploy:
+after_success:
   - ng build --prod --base-href="https://puku0x.github.io/angular-pwa-sample/"
-
-deploy:
-  provider: firebase
-  token:
-    secure: "pU+asnHhDXUqIb0l4n0bEHp3lJV3kwFy+1rOR+GpdjRxBslkkmPeCIp8QXwExv+gu82EkyfEQNMB3yPSM+xzKCd7uiuOtd7CP40O28m9Ceefpaqu51FUAIJRs0mlD2GbobZjbvISDntcrl2uj+8D9prRWyjU8hqmHuiotLxIxrc9wEeaqw5SNDjC8kkoSlJIEOFIlK8QgQe7X8LSy+ghG2nO8idkdlJ2M0+i2o2tF7Tpi+THcGM11/EudUaMeluEckCgecsWmkIZAACdv2+jadysDtjMvMmL6UI9rg4akoRHj0C9vMW14JwVdTwHx3o+kXYLx/rgJEX/4nUv3nMGNHXDnH6Qs4wHGa22vZEBVtR0JJVM4dx7skB1Y/UfmYvmFmFfaZx6DbGPvv0STA3A5Z9oHKfllqYXj3r1cIuu7BPYLnXY4GEN3lz/rqnl2gbU8gxxm0ZSF2g8mqQgE1LlKvFxAZaqrRFEVwDNHL44QL8/eeYdLAH44k0O0l8IDEE+zGLQmtX/GthqvSftBKso7p1caHRCgivoSzC1pU7O4BEE+F28ENgcwFxU0laUMrN66N79E+/ZfKkspO5NL/y83xsFpmLPdZ1KyKqoMSLaARszuR8Asq07iUJdgKPq00ar6XGGwbZVQcPTC5MUfMeMYgqCQJFOe2NS9RpdRr2KVwE="
+  - firebase deploy --token $FIREBASE_TOKEN
