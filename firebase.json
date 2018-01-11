@@ -3,8 +3,23 @@
     "public": "dist",
     "rewrites": [
       {
+        "source": "/service-worker.js",
+        "destination": "/ngsw-worker.js"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/service-worker.js",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
       }
     ]
   }
