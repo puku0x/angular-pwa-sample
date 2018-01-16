@@ -20,7 +20,8 @@ before_install:
 
 script:
   - ng test --single-run --browser=ChromeHeadless
+  - npm run build
 
-after_success:
-  - ng build --prod
-  - firebase deploy --token $FIREBASE_TOKEN
+deploy:
+  provider: firebase
+  token: $FIREBASE_TOKEN
