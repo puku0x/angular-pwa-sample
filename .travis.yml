@@ -1,9 +1,10 @@
-sudo: required
+sudo: false
 
 language: node_js
 
 node_js:
-  - stable
+  - "8"
+  - "node"
 
 dist: trusty
 
@@ -14,12 +15,8 @@ cache:
 addons:
   chrome: stable
 
-before_install:
-  - npm install -g @angular/cli
-  - npm install -g firebase-tools
-
 script:
-  - ng test --single-run --browser=ChromeHeadless
+  - npm run test
   - npm run build
 
 deploy:

@@ -37,14 +37,13 @@
     },
     {
       "root": "src",
-      "outDir": "dist-server/",
+      "outDir": "dist-server",
       "assets": [
         "assets",
         "favicon.ico"
       ],
       "index": "index.html",
       "main": "main.server.ts",
-      "polyfills": "polyfills.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.server.json",
       "testTsconfig": "tsconfig.spec.json",

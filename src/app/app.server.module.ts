@@ -1,7 +1,7 @@
-import { ServerModule } from '@angular/platform-server';
 import { NgModule } from '@angular/core';
+import { ServerModule } from '@angular/platform-server';
 import { Routes, RouterModule } from '@angular/router';
-import { MatProgressBarModule } from '@angular/material/';
+import { MatProgressBarModule } from '@angular/material';
 
 import { AppModule } from './app.module';
 import { AppComponent } from './app.component';
@@ -14,7 +14,7 @@ const routes: Routes = [ { path: 'shell', component: AppShellComponent }];
     AppModule,
     ServerModule,
     RouterModule.forRoot(routes),
-    MatProgressBarModule,
+    MatProgressBarModule
   ],
   bootstrap: [AppComponent],
   declarations: [AppShellComponent],
