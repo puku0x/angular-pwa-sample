@@ -7,14 +7,14 @@ import { AppModule } from './app.module';
 import { AppComponent } from './app.component';
 import { AppShellComponent } from './app-shell/app-shell.component';
 
-const routes: Routes = [ { path: 'shell', component: AppShellComponent }];
+const routes: Routes = [{ path: 'shell', component: AppShellComponent }];
 
 @NgModule({
   imports: [
     AppModule,
     ServerModule,
+    MatProgressBarModule,
     RouterModule.forRoot(routes),
-    MatProgressBarModule
   ],
   bootstrap: [AppComponent],
   declarations: [AppShellComponent],
