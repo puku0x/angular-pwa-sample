@@ -15,7 +15,7 @@ import { environment } from '../environments/environment';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     MaterialModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

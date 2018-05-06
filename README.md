@@ -13,7 +13,7 @@ This sample contains following features.
 1. Install Angular CLI 6.0.0
 
 ```shell
-$ npm i -g @angular/cli@next
+$ npm i -g @angular/cli
 ```
 
 2. Create an app
@@ -29,66 +29,25 @@ $ cd my-app
 $ ng add @angular/pwa --project=my-app
 ```
 
-4. Fix the link for `manifest.json` in `index.html`
-
-```html
-<link rel="manifest" href="assets/manifest.json">
-```
-
-5. Replace `images/icons/` to `icons/` in `assets/manifest.json`
-
-6. Generate a universal
+4. Generate universal files
 
 ```shell
 $ ng g universal --client-project=my-app
 ```
 
-7. Run `npm install` to update dependencies.
+5. Run `npm install` to update dependencies.
 
 ```shell
 $ npm i
 ```
 
-8. Fix server app configurations in `angular.json`
-```json:angular.json
-"server": {
-  "builder": "@angular-devkit/build-angular:server",
-  "options": {
-    "outputPath": "dist/my-app-server",
-    "main": "src/main.server.ts",
-    "tsConfig": "src/tsconfig.server.json"
-  }
-}
-```
-
-9. Move `tsconfig.server.json` to `src/`
-
-```shell
-$ mv tsconfig.server.json src/tsconfig.server.json
-```
-
-10. Fix `src/tsconfig.server.json`
-
-```json:src/tsconfig.server.json
-{
-  "extends": "./tsconfig.app.json",
-  "compilerOptions": {
-    "outDir": "../out-tsc/app-server",
-    "module": "commonjs"
-  },
-  "angularCompilerOptions": {
-    "entryModule": "app/app.server.module#AppServerModule"
-  }
-}
-```
-
-11. Generate App Shell
+6. Generate App Shell
 
 ```shell
 $ ng g app-shell --client-project=my-app --universal-project=my-app
 ```
 
-12. Add App Shell configurations to `angular.json`
+7. Add App Shell configurations to `angular.json`
 
 ```json:angular.json
 "app-shell": {
@@ -106,7 +65,7 @@ $ ng g app-shell --client-project=my-app --universal-project=my-app
 }
 ```
 
-13. Run `ng run` to build App Shell
+8. Run `ng run` to build the App
 
 ```shell
 $ ng run my-app:app-shell:production
