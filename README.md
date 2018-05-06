@@ -1,3 +1,5 @@
+[![build][travis-ci-image]][travis-ci-url]
+
 # angular-pwa-sample
 
 This is a PWA sample using Angular CLI 6.0.0.
@@ -78,3 +80,7 @@ You can see it byusing `http-server`.
 ```
 $ npx http-server ./dist/my-app
 ```
+
+
+[travis-ci-url]: http://travis-ci.org/puku0x/angular-pwa-sample
+[travis-ci-image]: https://travis-ci.org/puku0x/angular-pwa-sample.svg?branch=master
