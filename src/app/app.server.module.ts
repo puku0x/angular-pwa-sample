@@ -13,8 +13,8 @@ const routes: Routes = [ { path: 'shell', component: AppShellComponent }];
   imports: [
     AppModule,
     ServerModule,
+    MatProgressBarModule,
     RouterModule.forRoot(routes),
-    MatProgressBarModule
   ],
   bootstrap: [AppComponent],
   declarations: [AppShellComponent],

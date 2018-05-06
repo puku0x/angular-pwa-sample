@@ -1,27 +1,80 @@
 # angular-pwa-sample
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+This is a PWA sample using Angular CLI 6.0.0.
 
-## Development server
+This sample contains following features.
+- Service Worker
+- Universal (SSR)
+- App Shell
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Tutorial
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Install Angular CLI 6.0.0
 
-## Build
+```shell
+$ npm i -g @angular/cli
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+2. Create an app
 
-## Running unit tests
+```shell
+$ ng new my-app --routing --style=scss
+$ cd my-app
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Add service worker
 
-## Running end-to-end tests
+```shell
+$ ng add @angular/pwa --project=my-app
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+4. Generate universal files
 
-## Further help
+```shell
+$ ng g universal --client-project=my-app
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+5. Run `npm install` to update dependencies.
+
+```shell
+$ npm i
+```
+
+6. Generate App Shell
+
+```shell
+$ ng g app-shell --client-project=my-app --universal-project=my-app
+```
+
+7. Add App Shell configurations to `angular.json`
+
+```json:angular.json
+"app-shell": {
+  "builder": "@angular-devkit/build-angular:app-shell",
+  "options": {
+    "browserTarget": "my-app:build",
+    "serverTarget": "my-app:server",
+    "route": "shell"
+  },
+  "configurations": {
+    "production": {
+      "browserTarget": "my-app:build:production"
+    }
+  }
+}
+```
+
+8. Run `ng run` to build the App
+
+```shell
+$ ng run my-app:app-shell:production
+```
+
+Congratulations ! Your Angular application is built in `dist/my-app`.
+
+You can see it byusing `http-server`.
+
+```
+$ npx http-server ./dist/my-app
+```
