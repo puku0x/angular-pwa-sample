@@ -4,6 +4,9 @@
 
 # angular-pwa-sample
 
+![lightouse](./lighthouse.png)
+
+
 This is a PWA sample using Angular CLI 6.
 
 This sample contains following features.
