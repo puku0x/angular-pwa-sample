@@ -2,7 +2,7 @@
 
 # angular-pwa-sample
 
-This is a PWA sample using Angular CLI 6.0.0.
+This is a PWA sample using Angular CLI 6.
 
 This sample contains following features.
 - Service Worker
@@ -12,7 +12,7 @@ This sample contains following features.
 
 ## Tutorial
 
-1. Install Angular CLI 6.0.0
+1. Install Angular CLI 6
 
 ```shell
 $ npm i -g @angular/cli
@@ -49,7 +49,7 @@ $ npm i
 $ ng g app-shell --client-project=my-app --universal-project=my-app
 ```
 
-7. Add App Shell configurations to `angular.json`
+7. Add configurations for production build
 
 ```json:angular.json
 "app-shell": {
@@ -67,7 +67,7 @@ $ ng g app-shell --client-project=my-app --universal-project=my-app
 }
 ```
 
-8. Run `ng run` to build the App
+8. Run `ng run` to build the app
 
 ```shell
 $ ng run my-app:app-shell:production
@@ -75,10 +75,10 @@ $ ng run my-app:app-shell:production
 
 Congratulations ! Your Angular application is built in `dist/my-app`.
 
-You can see it byusing `http-server`.
+You can see it by using `pushstate-server`.
 
 ```
-$ npx http-server ./dist/my-app
+$ npx pushstate-server ./dist/my-app
 ```
 
 
