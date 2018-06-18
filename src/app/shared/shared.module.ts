@@ -3,10 +3,18 @@ import { CommonModule } from '@angular/common';
 
 import { MaterialModule } from './material';
 
+// Modules
+const modules = [
+  CommonModule,
+  MaterialModule
+];
+
 @NgModule({
   imports: [
-    CommonModule,
-    MaterialModule,
+    ...modules
+  ],
+  exports: [
+    ...modules
   ],
   declarations: []
 })

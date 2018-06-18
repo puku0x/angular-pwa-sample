@@ -1,4 +1,6 @@
 [![build][travis-ci-image]][travis-ci-url]
+[![Dependency status][david-dm-image]][david-dm-url]
+[![Dev Dependency status][david-dm-dev-image]][david-dm-dev-url]
 
 # angular-pwa-sample
 
@@ -84,3 +86,7 @@ $ npx pushstate-server ./dist/my-app
 
 [travis-ci-url]: http://travis-ci.org/puku0x/angular-pwa-sample
 [travis-ci-image]: https://travis-ci.org/puku0x/angular-pwa-sample.svg?branch=master
+[david-dm-url]:https://david-dm.org/puku0x/angular-pwa-sample
+[david-dm-image]:https://david-dm.org/puku0x/angular-pwa-sample.svg
+[david-dm-dev-url]:https://david-dm.org/puku0x/angular-pwa-sample?type=dev
+[david-dm-dev-image]:https://david-dm.org/puku0x/angular-pwa-sample/dev-status.svg
