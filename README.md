@@ -7,7 +7,7 @@
 ![lightouse](./lighthouse.png)
 
 
-This is a PWA sample using Angular CLI 6.
+This is a PWA sample using Angular CLI 7.
 
 This sample contains following features.
 - Service Worker
@@ -17,7 +17,7 @@ This sample contains following features.
 
 ## Tutorial
 
-1. Install Angular CLI 6
+1. Install Angular CLI 7
 
 ```shell
 $ npm i -g @angular/cli
@@ -45,7 +45,7 @@ $ ng g universal --client-project=my-app
 5. Run `npm install` to update dependencies.
 
 ```shell
-$ npm i
+$ npm install
 ```
 
 6. Generate App Shell
@@ -54,25 +54,7 @@ $ npm i
 $ ng g app-shell --client-project=my-app --universal-project=my-app
 ```
 
-7. Add configurations for production build
-
-```json:angular.json
-"app-shell": {
-  "builder": "@angular-devkit/build-angular:app-shell",
-  "options": {
-    "browserTarget": "my-app:build",
-    "serverTarget": "my-app:server",
-    "route": "shell"
-  },
-  "configurations": {
-    "production": {
-      "browserTarget": "my-app:build:production"
-    }
-  }
-}
-```
-
-8. Run `ng run` to build the app
+7. Run `ng run` to build the app
 
 ```shell
 $ ng run my-app:app-shell:production
