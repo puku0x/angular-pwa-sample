@@ -3,19 +3,19 @@ sudo: required
 language: node_js
 
 node_js:
-  - "8"
+  - "10"
 
 dist: trusty
 
 cache:
   directories:
-    - node_modules
+    - "$HOME/.npm"
 
 addons:
   chrome: stable
 
 script:
-  - npm run test
+  - npm run test -- --no-watch --browsers=ChromeHeadless
   - npm run e2e
 
 after_success:
