@@ -42,19 +42,13 @@ $ ng add @angular/pwa --project=my-app
 $ ng g universal --client-project=my-app
 ```
 
-5. Run `npm install` to update dependencies.
-
-```shell
-$ npm install
-```
-
-6. Generate App Shell
+5. Generate App Shell
 
 ```shell
 $ ng g app-shell --client-project=my-app --universal-project=my-app
 ```
 
-7. Run `ng run` to build the app
+6. Run `ng run` to build the app
 
 ```shell
 $ ng run my-app:app-shell:production
