@@ -136,7 +136,8 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "my-app:build:production"
+              "browserTarget": "my-app:build:production",
+              "serverTarget": "my-app:server:production"
             }
           }
         }
