@@ -1,13 +1,14 @@
 [![build][travis-ci-image]][travis-ci-url]
 [![Dependency status][david-dm-image]][david-dm-url]
 [![Dev Dependency status][david-dm-dev-image]][david-dm-dev-url]
+[![Known Vulnerabilities][snyk-image]][snyk-url]
 
 # angular-pwa-sample
 
 ![lightouse](./lighthouse.png)
 
 
-This is a PWA sample using Angular CLI 7.
+This is a PWA sample using Angular CLI.
 
 This sample contains following features.
 - Service Worker
@@ -17,7 +18,7 @@ This sample contains following features.
 
 ## Tutorial
 
-1. Install Angular CLI 7
+1. Install Angular CLI
 
 ```shell
 $ npm i -g @angular/cli
@@ -56,12 +57,11 @@ $ ng run my-app:app-shell:production
 
 Congratulations ! Your Angular application is built in `dist/my-app`.
 
-You can see it by using `pushstate-server`.
+You can see it by using a local web server, for example [pushstate-server](https://github.com/scottcorgan/pushstate-server).
 
 ```
 $ npx pushstate-server ./dist/my-app
 ```
-
 
 [travis-ci-url]: http://travis-ci.org/puku0x/angular-pwa-sample
 [travis-ci-image]: https://travis-ci.org/puku0x/angular-pwa-sample.svg?branch=master
@@ -69,3 +69,5 @@ $ npx pushstate-server ./dist/my-app
 [david-dm-image]:https://david-dm.org/puku0x/angular-pwa-sample.svg
 [david-dm-dev-url]:https://david-dm.org/puku0x/angular-pwa-sample?type=dev
 [david-dm-dev-image]:https://david-dm.org/puku0x/angular-pwa-sample/dev-status.svg
+[snyk-url]: https://snyk.io/test/github/puku0x/angular-pwa-sample
+[snyk-image]: https://snyk.io/test/github/puku0x/angular-pwa-sample/badge.svg
