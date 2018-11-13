@@ -31,25 +31,19 @@ $ ng new my-app --routing --style=scss
 $ cd my-app
 ```
 
-3. Add service worker
+3. Add PWA module
 
 ```shell
 $ ng add @angular/pwa --project=my-app
 ```
 
-4. Generate universal files
-
-```shell
-$ ng g universal --client-project=my-app
-```
-
-5. Generate App Shell
+4. Generate App Shell
 
 ```shell
 $ ng g app-shell --client-project=my-app --universal-project=my-app
 ```
 
-6. Run `ng run` to build the app
+5. Run `ng run` to build the app
 
 ```shell
 $ ng run my-app:app-shell:production
