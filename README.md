@@ -31,19 +31,25 @@ $ ng new my-app --routing --style=scss
 $ cd my-app
 ```
 
-3. Add PWA module
+3. Add service worker
 
 ```shell
 $ ng add @angular/pwa --project=my-app
 ```
 
-4. Generate App Shell
+4. Generate universal files
+
+```shell
+$ ng g universal --client-project=my-app
+```
+
+5. Generate App Shell
 
 ```shell
 $ ng g app-shell --client-project=my-app --universal-project=my-app
 ```
 
-5. Run `ng run` to build the app
+6. Run `ng run` to build the app
 
 ```shell
 $ ng run my-app:app-shell:production
@@ -51,10 +57,10 @@ $ ng run my-app:app-shell:production
 
 Congratulations ! Your Angular application is built in `dist/my-app`.
 
-You can see it by using a local web server, for example [pushstate-server](https://github.com/scottcorgan/pushstate-server).
+You can see it by using node-static`.
 
 ```
-$ npx pushstate-server ./dist/my-app
+$ npx node-static ./dist/my-app --spa
 ```
 
 [travis-ci-url]: http://travis-ci.org/puku0x/angular-pwa-sample
