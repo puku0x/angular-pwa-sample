@@ -7,14 +7,12 @@
 
 ![lightouse](./lighthouse.png)
 
-
 This is a PWA sample using Angular CLI.
 
 This sample contains following features.
 - Service Worker
 - Universal (SSR)
 - App Shell
-
 
 ## Tutorial
 
@@ -37,19 +35,13 @@ $ cd my-app
 $ ng add @angular/pwa --project=my-app
 ```
 
-4. Generate universal files
-
-```shell
-$ ng g universal --client-project=my-app
-```
-
-5. Generate App Shell
+4. Generate App Shell
 
 ```shell
 $ ng g app-shell --client-project=my-app --universal-project=my-app
 ```
 
-6. Run `ng run` to build the app
+5. Run `ng run` to build the app
 
 ```shell
 $ ng run my-app:app-shell:production
@@ -57,7 +49,7 @@ $ ng run my-app:app-shell:production
 
 Congratulations ! Your Angular application is built in `dist/my-app`.
 
-You can see it by using node-static`.
+You can see it by using a static file server.
 
 ```
 $ npx node-static ./dist/my-app --spa
