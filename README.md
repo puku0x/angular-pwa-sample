@@ -10,9 +10,8 @@
 This is a PWA sample using Angular CLI.
 
 This sample contains following features.
-- Service Worker
-- Universal (SSR)
-- App Shell
+- Angular Service Worker
+- App Shell with Angular Universal
 
 ## Tutorial
 
@@ -49,7 +48,7 @@ $ ng run my-app:app-shell:production
 
 Congratulations ! Your Angular application is built in `dist/my-app`.
 
-You can see it by using a static file server.
+You can see the app by using a static file server.
 
 ```
 $ npx node-static ./dist/my-app --spa
