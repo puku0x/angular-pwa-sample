@@ -16,8 +16,8 @@ addons:
   chrome: stable
 
 script:
-  - npm run test -- --no-watch --browsers=ChromeHeadlessCI
-  - npm run e2e
+  - npm run test:ci
+  - npm run e2e:ci
 
 after_success:
   - npm run build
