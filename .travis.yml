@@ -1,15 +1,7 @@
-sudo: required
-
 language: node_js
 
 node_js:
   - "10"
-
-dist: trusty
-
-cache:
-  directories:
-    - "$HOME/.npm"
 
 addons:
   chrome: stable
@@ -18,8 +10,8 @@ script:
   - npm run test:ci
   - npm run e2e:ci
 
-after_success:
-  - npm run build
+before_deploy:
+  - npm run build:ci
 
 deploy:
   provider: firebase
