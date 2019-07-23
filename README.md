@@ -51,7 +51,7 @@ Congratulations ! Your Angular application is built in `dist/my-app`.
 You can see the app by using a static file server.
 
 ```
-$ npx node-static ./dist/my-app --spa
+$ npx serve -s ./dist/my-app
 ```
 
 [travis-ci-url]: http://travis-ci.org/puku0x/angular-pwa-sample
