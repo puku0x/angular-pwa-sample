@@ -24,7 +24,7 @@ $ npm i -g @angular/cli
 2. Create an app
 
 ```shell
-$ ng new my-app --routing --style=scss
+$ ng new my-app --routing --style=css
 $ cd my-app
 ```
 
