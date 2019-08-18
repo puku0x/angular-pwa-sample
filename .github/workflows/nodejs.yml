@@ -29,6 +29,6 @@ jobs:
       run: npm run e2e -- --configuration=ci
     - name: Deploy
       uses: w9jds/firebase-action@v1.0.1
-      shell: deploy --only hosting
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      run: deploy --only hosting
