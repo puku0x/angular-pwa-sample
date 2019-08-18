@@ -55,7 +55,7 @@ $ npx serve -s ./dist/my-app
 ```
 
 [actions-url]: https://github.com/puku0x/angular-pwa-sample/actions
-[actions-image]: https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/badge/puku0x/angular-pwa-sample
+[actions-image]: https://action-badges.now.sh/puku0x/angular-pwa-sample
 [david-dm-url]:https://david-dm.org/puku0x/angular-pwa-sample
 [david-dm-image]:https://david-dm.org/puku0x/angular-pwa-sample.svg
 [david-dm-dev-url]:https://david-dm.org/puku0x/angular-pwa-sample?type=dev
