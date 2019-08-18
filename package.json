@@ -5,12 +5,9 @@
     "ng": "ng",
     "start": "ng serve --open",
     "build": "ng run my-app:app-shell",
-    "build:ci": "ng run my-app:app-shell:production",
     "test": "ng test --code-coverage",
-    "test:ci": "ng test --no-watch --no-progress --code-coverage --browsers=ChromeHeadlessCI",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "e2e:ci": "ng e2e --protractor-config=e2e/protractor-ci.conf.js"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {

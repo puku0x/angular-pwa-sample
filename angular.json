@@ -100,6 +100,13 @@
               "src/styles.css"
             ],
             "scripts": []
+          },
+          "configurations": {
+            "ci": {
+              "watch": false,
+              "progress": false,
+              "browsers": "ChromeHeadlessCI"
+            }
           }
         },
         "lint": {
@@ -124,6 +131,9 @@
           "configurations": {
             "production": {
               "devServerTarget": "my-app:serve:production"
+            },
+            "ci": {
+              "protractorConfig": "e2e/protractor-ci.conf.js"
             }
           }
         },

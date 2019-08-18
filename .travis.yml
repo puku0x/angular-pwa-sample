@@ -7,11 +7,11 @@ addons:
   chrome: stable
 
 script:
-  - npm run test:ci
-  - npm run e2e:ci
+  - npm run test -- --configuration=ci
+  - npm run e2e -- --configuration=ci
 
 before_deploy:
-  - npm run build:ci
+  - npm run build -- --configuration=production
 
 deploy:
   provider: firebase
