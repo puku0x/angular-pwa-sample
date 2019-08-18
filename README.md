@@ -54,11 +54,11 @@ You can see the app by using a static file server.
 $ npx serve -s ./dist/my-app
 ```
 
-[actions-url]: https://github.com/puku0x/angular-pwa-sample/actions
-[actions-image]: https://action-badges.now.sh/puku0x/angular-pwa-sample
+[actions-url]:https://github.com/puku0x/angular-pwa-sample/actions
+[actions-image]:https://action-badges.now.sh/puku0x/angular-pwa-sample
 [david-dm-url]:https://david-dm.org/puku0x/angular-pwa-sample
 [david-dm-image]:https://david-dm.org/puku0x/angular-pwa-sample.svg
 [david-dm-dev-url]:https://david-dm.org/puku0x/angular-pwa-sample?type=dev
 [david-dm-dev-image]:https://david-dm.org/puku0x/angular-pwa-sample/dev-status.svg
-[snyk-url]: https://snyk.io/test/github/puku0x/angular-pwa-sample
-[snyk-image]: https://snyk.io/test/github/puku0x/angular-pwa-sample/badge.svg
+[snyk-url]:https://snyk.io/test/github/puku0x/angular-pwa-sample
+[snyk-image]:https://snyk.io/test/github/puku0x/angular-pwa-sample/badge.svg
