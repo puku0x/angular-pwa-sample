@@ -1,4 +1,4 @@
-[![build][travis-ci-image]][travis-ci-url]
+[![Actions status][actions-image]][actions-url]
 [![Dependency status][david-dm-image]][david-dm-url]
 [![Dev Dependency status][david-dm-dev-image]][david-dm-dev-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
@@ -54,8 +54,8 @@ You can see the app by using a static file server.
 $ npx serve -s ./dist/my-app
 ```
 
-[travis-ci-url]: http://travis-ci.org/puku0x/angular-pwa-sample
-[travis-ci-image]: https://travis-ci.org/puku0x/angular-pwa-sample.svg?branch=master
+[actions-url]: https://github.com/puku0x/angular-pwa-sample/actions
+[actions-image]: https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/badge/puku0x/angular-pwa-sample
 [david-dm-url]:https://david-dm.org/puku0x/angular-pwa-sample
 [david-dm-image]:https://david-dm.org/puku0x/angular-pwa-sample.svg
 [david-dm-dev-url]:https://david-dm.org/puku0x/angular-pwa-sample?type=dev
