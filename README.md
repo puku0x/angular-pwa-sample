@@ -31,7 +31,7 @@ $ cd my-app
 3. Add service worker
 
 ```shell
-$ ng add @angular/pwa --project=my-app
+$ ng add @angular/pwa
 ```
 
 4. Generate App Shell
