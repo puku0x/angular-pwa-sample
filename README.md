@@ -43,7 +43,7 @@ $ ng g app-shell --client-project=my-app --universal-project=my-app
 5. Run `ng run` to build the app
 
 ```shell
-$ ng run my-app:app-shell:production
+$ ng run my-app:app-shell --configuration=production
 ```
 
 Congratulations ! Your Angular application is built in `dist/my-app`.
@@ -51,11 +51,11 @@ Congratulations ! Your Angular application is built in `dist/my-app`.
 You can see the app by using a static file server.
 
 ```
-$ npx serve -s ./dist/my-app
+$ npx serve -s dist/my-app
 ```
 
 [actions-url]:https://github.com/puku0x/angular-pwa-sample/actions
-[actions-image]:https://action-badges.now.sh/puku0x/angular-pwa-sample?branch=master
+[actions-image]:https://github.com/puku0x/angular-pwa-sample/workflows/CI/badge.svg
 [david-dm-url]:https://david-dm.org/puku0x/angular-pwa-sample
 [david-dm-image]:https://david-dm.org/puku0x/angular-pwa-sample.svg
 [david-dm-dev-url]:https://david-dm.org/puku0x/angular-pwa-sample?type=dev
