@@ -10,6 +10,7 @@
 This is a PWA sample using Angular CLI.
 
 This sample contains following features.
+
 - Angular Service Worker
 - App Shell with Angular Universal
 
@@ -37,7 +38,7 @@ $ ng add @angular/pwa
 4. Generate App Shell
 
 ```shell
-$ ng g app-shell --client-project=my-app --universal-project=my-app
+$ ng g app-shell --client-project=my-app
 ```
 
 5. Run `ng run` to build the app
@@ -46,19 +47,19 @@ $ ng g app-shell --client-project=my-app --universal-project=my-app
 $ ng run my-app:app-shell --configuration=production
 ```
 
-Congratulations ! Your Angular application is built in `dist/my-app`.
+Congratulations ! Your Angular application is built in `dist/my-app/browser`.
 
 You can see the app by using a static file server.
 
 ```
-$ npx serve -s dist/my-app
+$ npx serve -s dist/my-app/browser
 ```
 
-[actions-url]:https://github.com/puku0x/angular-pwa-sample/actions
-[actions-image]:https://github.com/puku0x/angular-pwa-sample/workflows/CI/badge.svg
-[david-dm-url]:https://david-dm.org/puku0x/angular-pwa-sample
-[david-dm-image]:https://david-dm.org/puku0x/angular-pwa-sample.svg
-[david-dm-dev-url]:https://david-dm.org/puku0x/angular-pwa-sample?type=dev
-[david-dm-dev-image]:https://david-dm.org/puku0x/angular-pwa-sample/dev-status.svg
-[snyk-url]:https://snyk.io/test/github/puku0x/angular-pwa-sample
-[snyk-image]:https://snyk.io/test/github/puku0x/angular-pwa-sample/badge.svg
+[actions-url]: https://github.com/puku0x/angular-pwa-sample/actions
+[actions-image]: https://github.com/puku0x/angular-pwa-sample/workflows/CI/badge.svg
+[david-dm-url]: https://david-dm.org/puku0x/angular-pwa-sample
+[david-dm-image]: https://david-dm.org/puku0x/angular-pwa-sample.svg
+[david-dm-dev-url]: https://david-dm.org/puku0x/angular-pwa-sample?type=dev
+[david-dm-dev-image]: https://david-dm.org/puku0x/angular-pwa-sample/dev-status.svg
+[snyk-url]: https://snyk.io/test/github/puku0x/angular-pwa-sample
+[snyk-image]: https://snyk.io/test/github/puku0x/angular-pwa-sample/badge.svg
