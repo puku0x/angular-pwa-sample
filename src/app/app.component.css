@@ -1,6 +1,13 @@
+.spacer {
+  flex: 1;
+}
+
 .toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 60px;
-  margin: -8px;
   display: flex;
   align-items: center;
   background-color: #1976d2;
@@ -20,8 +27,3 @@
 .toolbar #twitter-logo:hover {
   opacity: 0.8;
 }
-
-.spacer {
-  flex: 1;
-}
-
