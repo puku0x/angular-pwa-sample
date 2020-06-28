@@ -23,7 +23,7 @@ jobs:
     - name: E2E
       run: npm run e2e -- --configuration=ci
     - name: Build
-      run: npm run build -- --prod
+      run: npm run build -- --configuration=production
     - name: Deploy
       uses: w9jds/firebase-action@v1.5.0
       with:
