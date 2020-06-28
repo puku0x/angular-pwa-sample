@@ -4,13 +4,10 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [12.x, 14.x]
-
     steps:
     - uses: actions/checkout@v1
     - name: Setup Node.js
@@ -26,10 +23,10 @@ jobs:
     - name: E2E
       run: npm run e2e -- --configuration=ci
     - name: Build
-      run: npm run build -- --configuration=production
+      run: npm run build -- --prod
     - name: Deploy
-      uses: w9jds/firebase-action@v1.0.1
-      env:
-        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      uses: w9jds/firebase-action@v1.5.0
       with:
         args: deploy --only hosting
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
