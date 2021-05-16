@@ -1,6 +1,6 @@
-import { ServerModule } from '@angular/platform-server';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { ServerModule } from '@angular/platform-server';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppModule } from './app.module';
 import { AppComponent } from './app.component';

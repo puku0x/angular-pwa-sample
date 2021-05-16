@@ -38,13 +38,13 @@ $ ng add @angular/pwa
 4. Generate App Shell
 
 ```shell
-$ ng g app-shell --client-project=my-app
+$ ng g app-shell --project=my-app
 ```
 
 5. Run `ng run` to build the app
 
 ```shell
-$ ng run my-app:app-shell --configuration=production
+$ ng run my-app:app-shell
 ```
 
 Congratulations ! Your Angular application is built in `dist/my-app/browser`.
