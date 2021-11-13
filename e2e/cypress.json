@@ -1,0 +1,9 @@
+{
+  "integrationFolder": "e2e/src/integration",
+  "supportFile": "e2e/src/support/index.ts",
+  "videosFolder": "dist/e2e/videos",
+  "screenshotsFolder": "dist/e2e/screenshots",
+  "pluginsFile": "e2e/src/plugins/index.ts",
+  "fixturesFolder": "e2e/src/fixtures",
+  "baseUrl": "http://localhost:4200"
+}
