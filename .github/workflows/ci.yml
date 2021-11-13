@@ -7,23 +7,23 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x, 14.x]
+        node-version: [16.x]
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Setup Node.js
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install dependencies
       run: npm ci
     - name: Lint
-      run: npm run lint
+      run: npx ng lint
     - name: Test
-      run: npm test -- --configuration=ci
-    - name: E2E
-      run: npm run e2e -- --configuration=ci
+      run: npx ng test --configuration=ci
+    # - name: E2E
+    #   run: npx ng e2e --configuration=ci
     - name: Build
-      run: npm run build -- --configuration=production
+      run: npx ng run my-app:app-shell --configuration=production
     - name: Deploy
       uses: w9jds/firebase-action@v1.5.0
       with:
